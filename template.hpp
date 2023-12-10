@@ -23,6 +23,7 @@ template <int T>
 constexpr int fibonacci() {
     return fibonacci<T - 1>() + fibonacci<T - 2>();
 }
+
 template <>
 constexpr int fibonacci<0>() {
     return 0;
